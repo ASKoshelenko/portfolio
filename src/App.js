@@ -7,7 +7,7 @@ let cats = [
   { name: "All" },
   { name: "React" },
   { name: "Vue" },
-  { name: "Pure JS" },
+  { name: "Vanilla JS" },
   { name: "HTML & CSS" },
 ];
 
@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      `https://6306f7cac0d0f2b801242e89.mockapi.io/photo_collections?page=${page}&limit=3&${category}`
+      `https://63158cbd33e540a6d37ee228.mockapi.io/photo_collections?page=${page}&limit=6&${category}`
     )
       .then((res) => res.json())
       .then((json) => {
