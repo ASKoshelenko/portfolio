@@ -23,8 +23,7 @@ function App() {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-//       `https://63158cbd33e540a6d37ee228.mockapi.io/photo_collections?page=${page}&limit=6&${category}`
-       `https://63158cbd33e540a6d37ee228.mockapi.io/photo_collections?6&${category}`
+      `https://63158cbd33e540a6d37ee228.mockapi.io/photo_collections?page=${page}&limit=6&${category}`
     )
       .then((res) => res.json())
       .then((json) => {
@@ -76,16 +75,16 @@ function App() {
             })
         )}
       </div>
-//       <ul className="pagination">
-//         {[...Array(3)].map((e, i) => (
-//           <li
-//             onClick={() => setPage(i + 1)}
-//             className={page === i + 1 ? "active" : ""}
-//           >
-//             {i + 1}
-//           </li>
-//         ))}
-//       </ul>
+      <ul className="pagination">
+        {[...Array(3)].map((e, i) => (
+          <li
+            onClick={() => setPage(i + 1)}
+            className={page === i + 1 ? "active" : ""}
+          >
+            {i + 1}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
