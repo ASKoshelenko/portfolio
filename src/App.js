@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./index.scss";
 import Collection from "./Collection";
 
+
 let cats = [
   { name: "All" },
   { name: "React" },
@@ -16,7 +17,7 @@ function App() {
   const [categoryId, setCategoryId] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [page, setPage] = useState(1);
-  
+
   const category = categoryId ? `category=${categoryId}` : "";
 
   useEffect(() => {
