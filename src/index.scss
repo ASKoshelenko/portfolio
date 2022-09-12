@@ -19,8 +19,23 @@ body {
   max-width: 1200px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 10px;
+  color: #fff;
+}
+
 h1 {
   font-family: 'Merriweather', serif;
+}
+
+h3 {
+  margin-left: 10px;
 }
 
 .tags {
@@ -156,4 +171,12 @@ h1 {
       color: #fff;
     }
   }
+}
+
+// .nav {
+//   margin-right: 10px;
+// }
+
+.nav a {
+  margin-right: 10px;
 }

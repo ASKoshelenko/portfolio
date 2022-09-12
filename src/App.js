@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
-import Collection from "./Collection";
+import Collection from "./components/Collection";
+import Navigation from "./components/Navigation";
 
 
 let cats = [
@@ -38,6 +39,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navigation />
       <h1>My projects</h1>
       <div className="top">
         <ul className="tags">
@@ -70,7 +72,7 @@ function App() {
             )
             .map((obj, index) => {
               return (
-                <Collection key={index} name={obj.name} images={obj.photos} />
+                  <Collection key={index} name={obj.name} images={obj.photos} />
               );
             })
         )}
