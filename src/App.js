@@ -41,7 +41,7 @@ function App() {
     <div className="App">
       <Navigation />
       <h1>Alex Koshelenko</h1>
-      <h2>projects</h2>
+      <h2>Click on Links at the top to have more information about me and my projects.</h2>
       <div className="top">
         <ul className="tags">
           {cats.map((e, i) => (
