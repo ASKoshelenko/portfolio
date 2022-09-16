@@ -73,7 +73,7 @@ function App() {
             )
             .map((obj, index) => {
               return (
-                  <Collection key={index} name={obj.name} images={obj.photos} />
+                  <Collection key={index} name={obj.name} images={obj.photos} link={obj.link} description={obj.description}/>
               );
             })
         )}
